@@ -1,0 +1,26 @@
+#sposob interakcji z pluginem na serwerze
+#sa 3 mozliwosci:
+# 'command' - gracz uzywa pluginu przez komende /quests (aliasy: /quest, /q, /zadania)
+# 'npc'     - gracz uzywa pluginy poprzez npc (wymagany Citizens)
+# 'mixed'   - gracz moze uzywac pluginu jednoczesnie przez npc oraz komendy
+#podstawowo jest ustawione na 'command', w razie gdyby nie bylo Citizens w momencie instalacji pluginu
+questDisplayMode: command
+database:
+  host: localhost
+  username: root
+  password:
+  dbname: quests
+  usertable: users
+  port: 3306
+#informacje o NPC obslugujacym zadania (dziala tylko jesli jest ustawione questDisplayMode na 'npc' albo 'mixed')
+npc:
+  name: Rybak
+  uuid: af5ac889-526d-4d46-912e-77bbd5185a1e
+  world: world
+  x: 0
+  y: 75
+  z: 0
+# czas podany w minutach
+# tylko dane graczy beda w bazie, bo questy latwiej sie robi w plikach ;d
+scheduler:
+  saveDelay: 1

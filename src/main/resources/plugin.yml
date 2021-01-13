@@ -1,0 +1,8 @@
+name: Quests
+main: net.mistrifix.main.QuestPlugin
+version: 1.0-SNAPSHOT
+softdepend: [Citizens]
+commands:
+  quests:
+    description: nothing at all ;d
+    aliases: [q, quest, zadania]
