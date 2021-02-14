@@ -21,8 +21,6 @@ public class PlayerJoin implements Listener {
             return;
         }
         user.sendMessage("&cJuz istniejesz w bazie.");
-        user.sendMessage("&bQuests by themikishou ver. 1.0");
-
         if(user.hasQuest())
         {
             if(!player.getScoreboard().equals(user.setupScoreboard()))
